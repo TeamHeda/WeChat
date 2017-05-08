@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+ >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#ffffff"
+        android:paddingLeft="20dp"
+        android:paddingRight="30dp"
+        android:drawableRight="@drawable/china"
+        android:gravity="center_vertical"
+        style="@style/menu_margin"
+        android:text="国家和地区"
+        android:id="@+id/btn_select_nation" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/menu_margin"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:text="+86"
+        android:ems="10"
+        android:id="@+id/editText_phonenumber"
+        />
+    <Button
+        android:text="注册"
+        android:textColor="#c1c1bf"
+        style="@style/menu_margin"
+        android:background="#8ab17c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_Register_register" />
+
+    <TextView
+        android:text="点击上面的按钮，表示你同意协议"
+        style="@style/menu_margin"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_agree" />
+
+</LinearLayout>
