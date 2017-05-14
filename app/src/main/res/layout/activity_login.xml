@@ -5,7 +5,7 @@
     android:id="@+id/activity_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.henu.example.com.wechat.LoginActivity">
+    tools:context="com.henu.example.com.wechat.activity.LoginActivity">
 
     <ImageView
         android:gravity="center_horizontal"

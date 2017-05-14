@@ -1,4 +1,4 @@
-package com.henu.example.com.wechat;
+package com.henu.example.com.wechat.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.henu.example.com.wechat.R;
+import com.henu.example.com.wechat.fragment.MainFragmentActivity;
 
 public class LoginActivity extends AppCompatActivity {
     TextView username,register;
@@ -25,7 +28,13 @@ public class LoginActivity extends AppCompatActivity {
         pass=(EditText)findViewById(R.id.editText_password);
         login=(Button)findViewById(R.id.button_Login_login);
         register=(TextView)findViewById(R.id.textView_to_register);
-
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(LoginActivity.this,MainFragmentActivity.class);
+                startActivity(intent);
+            }
+        });
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

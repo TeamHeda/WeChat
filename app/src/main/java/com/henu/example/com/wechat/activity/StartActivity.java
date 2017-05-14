@@ -1,9 +1,11 @@
-package com.henu.example.com.wechat;
+package com.henu.example.com.wechat.activity;
 
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.henu.example.com.wechat.R;
 
 public class StartActivity extends AppCompatActivity {
 

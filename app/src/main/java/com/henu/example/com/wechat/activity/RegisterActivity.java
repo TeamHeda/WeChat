@@ -1,4 +1,4 @@
-package com.henu.example.com.wechat;
+package com.henu.example.com.wechat.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.henu.example.com.wechat.R;
 
 public class RegisterActivity extends AppCompatActivity {
     Button register,nation;

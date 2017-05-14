@@ -6,4 +6,9 @@
     <color name="colorLogin">#399d16</color>
     <color name="colorRegister">#c6c6c6</color>
     <color name="highGreen">#00aa00</color>
+
+    <color name="common_bg">#fcfcfc</color>
+    <color name="common_top_bar_blue">#22292c</color>
+    <color name="bottom_bar_normal_bg">#fcfcfc</color>
+    <color name="common_botton_bar_blue">#46c01b</color>
 </resources>
