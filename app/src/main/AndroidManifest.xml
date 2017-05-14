@@ -8,20 +8,27 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.MainActivity"/>
-        <activity android:name=".activity.RegisterActivity" />
-        <activity android:name=".activity.LoginActivity" />
-        <activity android:name=".activity.StartActivity">
+        <activity android:name=".main.activity.MainActivity" />
+        <activity android:name=".main.activity.RegisterActivity" />
+        <activity android:name=".main.activity.LoginActivity" />
+        <activity android:name=".main.activity.StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".fragment.MainFragmentActivity">
-
-
-        </activity>
+        <activity android:name=".main.fragment.MainFragmentActivity" />
+        <activity android:name=".main.activity.ProfileActivity" />
+        <activity android:name=".main.activity.SettingsActivity" />
+        <activity android:name=".main.activity.SocialMainActivity" />
+        <activity android:name=".main.activity.ScanCaptureActivity" />
+        <activity android:name=".main.activity.ShakeActivity" />
+        <activity android:name=".main.activity.NearPeopleActivity" />
+        <activity android:name=".main.activity.AddFriendsNextActivity" />
+        <activity android:name=".main.activity.GroupAddMembersActivity" />
+        <activity android:name=".main.activity.AddFriendsPreActivity" />
+        <activity android:name=".main.activity.FeedBackActivity"></activity>
     </application>
 
 </manifest>
