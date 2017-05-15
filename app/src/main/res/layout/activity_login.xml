@@ -20,13 +20,13 @@
         android:layout_marginTop="78dp"
         android:id="@+id/user_photo"/>
 
-    <TextView
+    <EditText
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="用户名"
         android:textAlignment="center"
-
+        android:editable="true"
         android:layout_below="@+id/user_photo"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"

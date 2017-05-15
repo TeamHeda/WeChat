@@ -2,10 +2,15 @@ package com.henu.example.com.wechat.main.fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.AdapterView;
 
+import com.henu.example.com.wechat.Helper;
 import com.henu.example.com.wechat.R;
+import com.hyphenate.easeui.domain.EaseUser;
 import com.hyphenate.easeui.ui.EaseContactListFragment;
 import com.hyphenate.util.NetUtils;
+
+import java.util.Map;
 
 public class ContactListFragment extends EaseContactListFragment implements View.OnClickListener {
 
@@ -30,12 +35,14 @@ public class ContactListFragment extends EaseContactListFragment implements View
 
     @Override
     public void refresh() {
-        //super.refresh();
+        Map<String,EaseUser> m= Helper.getInstance().getContactList();
+        setContactsMap(m);
+        super.refresh();
     }
 
     @Override
     protected void setUpView() {
-        titleBar.setRightImageResource(R.drawable.em_add);
+        titleBar.setRightImageResource(R.drawable.wx_add);
         titleBar.setRightLayoutClickListener(new View.OnClickListener() {
 
             @Override
@@ -43,7 +50,15 @@ public class ContactListFragment extends EaseContactListFragment implements View
                 NetUtils.hasDataConnection(getActivity());
             }
         });
-        //super.setUpView();
+        Map<String, EaseUser> m = Helper.getInstance().getContactList();
+        setContactsMap(m);
+        super.setUpView();
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+            }
+        });
     }
 
     @Override
