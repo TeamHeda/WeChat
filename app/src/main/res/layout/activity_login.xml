@@ -21,23 +21,11 @@
         android:id="@+id/user_photo"/>
 
     <EditText
-        android:gravity="center_horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="用户名"
-        android:textAlignment="center"
-        android:editable="true"
-        android:layout_below="@+id/user_photo"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/text_usreName"/>
-
-    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:drawableLeft="@drawable/lock"
-        android:hint="请填写密码"
+        android:hint="请输入密码"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
         android:ems="10"
@@ -68,4 +56,16 @@
         android:id="@+id/textView_to_register"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/header"
+        android:hint="请输入用户名"
+        android:id="@+id/text_usreName"
+        android:layout_above="@+id/editText_password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

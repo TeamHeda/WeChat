@@ -11,4 +11,6 @@
     <color name="common_top_bar_blue">#22292c</color>
     <color name="bottom_bar_normal_bg">#fcfcfc</color>
     <color name="common_botton_bar_blue">#46c01b</color>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
 </resources>
