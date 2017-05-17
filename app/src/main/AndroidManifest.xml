@@ -79,7 +79,8 @@
         <activity android:name=".ui.VoiceCallActivity" />
         <activity android:name=".main.activity.ChatSettingSingleActivity" />
         <activity android:name=".main.activity.ChatSettingGroupActivity" />
-        <activity android:name=".ui.PickAtUserActivity"></activity>
+        <activity android:name=".ui.PickAtUserActivity" />
+        <activity android:name=".main.activity.UserDetailsActivity"></activity>
     </application>
 
 </manifest>

@@ -1,11 +1,13 @@
 package com.henu.example.com.wechat.main.fragment;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 
 import com.henu.example.com.wechat.Helper;
 import com.henu.example.com.wechat.R;
+import com.henu.example.com.wechat.main.activity.UserDetailsActivity;
 import com.hyphenate.easeui.domain.EaseUser;
 import com.hyphenate.easeui.ui.EaseContactListFragment;
 import com.hyphenate.util.NetUtils;
@@ -54,9 +56,14 @@ public class ContactListFragment extends EaseContactListFragment implements View
         setContactsMap(m);
         super.setUpView();
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
+                EaseUser user=((EaseUser) listView.getItemAtPosition(position));
+                if(user!=null&&user.getUserInfo()!=null){
+                    startActivity(new Intent(getActivity(), UserDetailsActivity.class));
+                }
+                startActivity(new Intent(getActivity(), UserDetailsActivity.class));
             }
         });
     }
