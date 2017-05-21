@@ -8,7 +8,7 @@ import android.widget.RelativeLayout;
 
 import com.henu.example.com.wechat.Helper;
 import com.henu.example.com.wechat.R;
-import com.henu.example.com.wechat.main.activity.LoginActivity;
+import com.henu.example.com.wechat.main.activity.MainActivity;
 import com.henu.example.com.wechat.main.fragment.MainFragmentActivity;
 import com.hyphenate.chat.EMClient;
 
@@ -66,7 +66,7 @@ public class StartActivity extends AppCompatActivity {
                         Thread.sleep(sleepTime);
                     } catch (InterruptedException e) {
                     }
-                    startActivity(new Intent(StartActivity.this, LoginActivity.class));
+                    startActivity(new Intent(StartActivity.this, MainActivity.class));
                     finish();
                 }
             }

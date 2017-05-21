@@ -1,12 +1,14 @@
 package com.henu.example.com.wechat.main.fragment;
 
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 
 import com.henu.example.com.wechat.Helper;
 import com.henu.example.com.wechat.R;
+import com.henu.example.com.wechat.main.WXServer;
 import com.henu.example.com.wechat.main.activity.UserDetailsActivity;
 import com.hyphenate.easeui.domain.EaseUser;
 import com.hyphenate.easeui.ui.EaseContactListFragment;
@@ -59,11 +61,21 @@ public class ContactListFragment extends EaseContactListFragment implements View
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                EaseUser user=((EaseUser) listView.getItemAtPosition(position));
-                if(user!=null&&user.getUserInfo()!=null){
-                    startActivity(new Intent(getActivity(), UserDetailsActivity.class));
+                EaseUser user = (EaseUser)( listView.getItemAtPosition(position));
+//                    if (user != null && user.getUserInfo() != null) {
+                Log.i("feifei",user.getUserInfo());
+
+                try {
+
+                        startActivity(new Intent(getActivity(), UserDetailsActivity.class).putExtra(WXServer.KEY_USER_INFO, user.getUserInfo()));
+//                    }
+
+
+                } catch (NullPointerException e) {
+                    e.printStackTrace();
+
                 }
-                startActivity(new Intent(getActivity(), UserDetailsActivity.class));
+                Log.i("listitem",position+"   "+id);
             }
         });
     }

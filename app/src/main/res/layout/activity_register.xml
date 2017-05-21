@@ -23,13 +23,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/menu_margin"
-        android:inputType="textPersonName"
-        android:hint="输入你的手机号"
+        android:maxLines="1"
+        android:hint="输入你的名字"
         android:id="@+id/editText_phonenumber"
         />
+
     <EditText
         android:id="@+id/edit_password"
         style="@style/menu_margin"
+       android:maxLines="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"

@@ -48,6 +48,8 @@
         <activity android:name=".main.activity.AddFriendsPreActivity" />
         <activity android:name=".main.activity.FeedBackActivity" />
 
+        <!--suppress AndroidDomInspection -->
+        <service android:name=".main.Serices.RegisterService"/>
         <!-- 设置环信应用的AppKey -->
         <meta-data
             android:name="EASEMOB_APPKEY"
@@ -80,7 +82,16 @@
         <activity android:name=".main.activity.ChatSettingSingleActivity" />
         <activity android:name=".main.activity.ChatSettingGroupActivity" />
         <activity android:name=".ui.PickAtUserActivity" />
-        <activity android:name=".main.activity.UserDetailsActivity"></activity>
+        <activity android:name=".main.activity.UserDetailsActivity" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
     </application>
 
 </manifest>
