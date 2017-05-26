@@ -98,6 +98,9 @@ public class ContactListFragment extends EaseContactListFragment implements View
                 try {
                     Log.i("fe","user");
                     EaseUser user = ((EaseUser) listView.getItemAtPosition(position));
+                   // Log.i("user",user.getUsername());
+                   // Log.i("user",user.getUserInfo());
+                    Log.i("456",user.getUserInfo());
                     if (user != null && user.getUserInfo() != null) {
                         Log.i("123","feifei");
                         startActivity(new Intent(getActivity(), UserDetailsActivity.class).putExtra(WXServer.KEY_USER_INFO, user.getUserInfo()));

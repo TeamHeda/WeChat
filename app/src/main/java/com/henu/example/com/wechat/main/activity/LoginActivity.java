@@ -246,6 +246,8 @@ public class LoginActivity extends AppCompatActivity {
                         JSONObject friend = friends.getJSONObject(i);
                         EaseUser easeUser = JSONUtil.Json2User(friend);
                         userlist.put(easeUser.getUsername(), easeUser);
+                        Log.i("friend",easeUser.getUsername());
+                        Log.i("friend",easeUser.getUserInfo());
                     }
                     // save the contact list to cache
                     Helper.getInstance().getContactList().clear();

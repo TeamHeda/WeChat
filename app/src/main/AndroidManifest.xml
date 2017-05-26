@@ -62,7 +62,6 @@
         <activity android:name=".main.activity.FeedBackActivity" />
 
         <!-- suppress AndroidDomInspection -->
-        <service android:name=".main.Serices.RegisterService" />
         <!-- 设置环信应用的AppKey -->
         <meta-data
             android:name="EASEMOB_APPKEY"
@@ -88,6 +87,14 @@
                 <action android:name="android.intent.action.USER_PRESENT" />
             </intent-filter>
         </receiver>
+
+        <service
+            android:name=".main.Serices.ContactsService"
+            android:exported="false"></service>
+        <service
+            android:name=".main.Serices.GroupService"
+            android:exported="false"></service>
+
 
         <activity android:name=".ui.ChatActivity" />
         <activity android:name=".ui.VideoCallActivity" />

@@ -8,6 +8,7 @@ import android.widget.RelativeLayout;
 
 import com.henu.example.com.wechat.Helper;
 import com.henu.example.com.wechat.R;
+import com.henu.example.com.wechat.main.Serices.ContactsService;
 import com.henu.example.com.wechat.main.activity.MainActivity;
 import com.henu.example.com.wechat.main.fragment.MainFragmentActivity;
 import com.hyphenate.chat.EMClient;
@@ -55,11 +56,11 @@ public class StartActivity extends AppCompatActivity {
                             e.printStackTrace();
                         }
                     }
-                    //startService(new Intent(StartActivity.this, ContactsService.class));
+                    startService(new Intent(StartActivity.this, ContactsService.class));
                     //enter main screen
                     startActivity(new Intent(StartActivity.this, MainFragmentActivity.class));
                     //获取下群组信息
-                    //startService(new Intent(SplashActivity.this, GroupService.class));
+                    //startService(new Intent(StartActivity.this, GroupService.class));
                     finish();
                 }else{
                     try {
